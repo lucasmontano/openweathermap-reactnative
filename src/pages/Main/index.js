@@ -1,18 +1,19 @@
 import React from 'react';
 
 import {Text, View, StyleSheet} from 'react-native';
+import ForecastDetails from '~/components/ForecastDetails';
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    justifyContent: 'center',
     flex: 1,
+    backgroundColor: '#cecece',
   },
 });
 
 const Main = () => (
   <View style={styles.container}>
-    <Text>Hello World!</Text>
+    <ForecastDetails />
   </View>
 );
 
