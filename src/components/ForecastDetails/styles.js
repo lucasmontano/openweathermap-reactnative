@@ -11,7 +11,7 @@ export const Card = styled(Animated.View)`
   width: 90%;
   left: 0;
   right: 0;
-  top: 0;
+  bottom: -700px;
   position: absolute;
 `;
 
@@ -58,7 +58,7 @@ export const Observations = styled.Text`
 
 export const BookmarkButton = styled.TouchableOpacity`
   padding: 15px;
-  background-color: #7159C1;
+  background-color: #7159c1;
   margin: 30px 20px 0 20px;
   border-radius: 10px;
   align-items: center;
