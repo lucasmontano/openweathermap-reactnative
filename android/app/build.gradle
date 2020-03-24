@@ -118,6 +118,10 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  * and the benefits of using Hermes will therefore be sharply reduced.
  */
 def enableHermes = project.ext.react.get("enableHermes", false);
+Properties properties = new Properties();
+properties.load(project.rootProject.file('local.properties').newDataInputStream());
+def googleMapApi = properties.getProperty('google.map.key');
+
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -133,6 +137,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        manifestPlaceholders = [googleMapApiKey:googleMapApi]
     }
     splits {
         abi {
