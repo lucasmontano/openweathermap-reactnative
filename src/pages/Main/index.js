@@ -1,20 +1,32 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-import {View, StyleSheet} from 'react-native';
+import {Container} from './styles';
 import ForecastDetails from '~/components/ForecastDetails';
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flex: 1,
-    backgroundColor: '#cecece',
-  },
-});
+import * as api from '../../services/api';
 
-const Main = () => (
-  <View style={styles.container}>
-    <ForecastDetails />
-  </View>
-);
+// MOCK GEOLOCATION
+const geolocation = {
+  lat: -29.9349425,
+  lon: -51.2152553,
+};
 
-export default Main;
+export default function Main() {
+  const [weather, setWeather] = useState({});
+
+  useEffect(() => {
+    (async function() {
+      const weatherResponse = await api.getWeatherByGeolocation(geolocation);
+
+      if (weatherResponse) {
+        setWeather(weatherResponse);
+      }
+    })();
+  }, []);
+
+  return (
+    <Container>
+      <ForecastDetails data={weather} />
+    </Container>
+  );
+}

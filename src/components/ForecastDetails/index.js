@@ -15,7 +15,7 @@ import {
   ButtonText,
 } from './styles';
 
-export default function ForecastDetails() {
+export default function ForecastDetails({data = {}}) {
   let offset = 0;
   const translateY = new Animated.Value(0);
 
@@ -80,7 +80,7 @@ export default function ForecastDetails() {
               extrapolate: 'clamp',
             }),
           }}>
-          Vreeland
+          {data.city}
         </Header>
         <Body
           style={{
@@ -90,13 +90,15 @@ export default function ForecastDetails() {
               extrapolate: 'clamp',
             }),
           }}>
-          <Wind>M7º / L5º</Wind>
-          <Temperature>5º</Temperature>
-          <WeatherInfo>Light rain</WeatherInfo>
-          <Umidity>87 %</Umidity>
+          <Wind>{`M ${data.tempMax || 0}º / L ${data.tempMin || 0}º`}</Wind>
+          <Temperature>{`${data.temperature || 0}º`}</Temperature>
+          <WeatherInfo>{data.weatherInfo || ''}</WeatherInfo>
+          <Umidity>{data.humidity || 0} %</Umidity>
           <Observations>
-            Right now is 5ºC and feels like -1ºC outside. The wind is blowing
-            around 8.7 km/h and the pressure is 1009 hPa.
+            {`Right now is ${data.temperature || 0}ºC and feels like` +
+              ` ${data.feelsLike || 0}ºC outside. The wind` +
+              `is blowing around ${data.speed || 0} km/h and` +
+              `the pressure is ${data.pressure || 0} hPa.`}
           </Observations>
           <BookmarkButton>
             <ButtonText>Bookmark this location</ButtonText>
