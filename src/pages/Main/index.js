@@ -4,6 +4,7 @@ import {Container} from './styles';
 import MapView, {Marker} from 'react-native-maps';
 import RNLocation from 'react-native-location';
 
+
 import ForecastDetails from '~/components/ForecastDetails';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
