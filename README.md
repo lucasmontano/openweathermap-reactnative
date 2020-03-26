@@ -37,6 +37,7 @@
   <li><a href="#-contributing">Contributing</a></li>
   <li><a href="#-support">Support</a></li>
   <li><a href="#-license">License</a></li>
+  <li><a href="#-acknowledgments">Acknowledgments</a></li>
 </ul>
 
 ---
@@ -163,6 +164,16 @@ Reach out to me at one of the following places!
 <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+Open Weather on Other Platforms:
+
+- Android: https://github.com/lucasmontano/openweathermap
+- iOS: https://github.com/lucasmontano/openweathermap-ios
+- Flutter: https://github.com/lucasmontano/openweathermap-flutter
 
 ---
 
