@@ -1,6 +1,7 @@
 import React from 'react';
 import {Animated} from 'react-native';
 import {PanGestureHandler, State} from 'react-native-gesture-handler';
+import WeekDay from '../WeekDay';
 
 import {
   Card,
@@ -98,6 +99,7 @@ export default function ForecastDetails() {
             Right now is 5ºC and feels like -1ºC outside. The wind is blowing
             around 8.7 km/h and the pressure is 1009 hPa.
           </Observations>
+          <WeekDay />
           <BookmarkButton>
             <ButtonText>Bookmark this location</ButtonText>
           </BookmarkButton>

@@ -21,11 +21,11 @@ export const Header = styled(Animated.Text)`
   padding: 10px 10px 10px 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #7159C1;
+  background-color: #7159c1;
   color: #fff;
 `;
 
-export const Body = styled(Animated.View)``;
+export const Body = styled(Animated.ScrollView)``;
 
 export const Wind = styled.Text`
   padding: 20px 0 0 20px;
@@ -58,8 +58,8 @@ export const Observations = styled.Text`
 
 export const BookmarkButton = styled.TouchableOpacity`
   padding: 15px;
-  background-color: #7159C1;
-  margin: 30px 20px 0 20px;
+  background-color: #7159c1;
+  margin: 30px 20px 45px 20px;
   border-radius: 10px;
   align-items: center;
 `;
