@@ -22,10 +22,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 </p>
 
-<img src="./readme/bookmark_detail.png" width="200" height="400" />
-<img src="./readme/bookmarked_location.png" width="200" height="400" />
-<img src="./readme/bookmarked_showing.png" width="200" height="400" />
-<img src="./readme/map_view.png" width="200" height="400" />
+<img src="./readme/bookmark_detail.png" width="200" height="400" /> <img src="./readme/bookmarked_location.png" width="200" height="400" /> <img src="./readme/bookmarked_showing.png" width="200" height="400" /> <img src="./readme/map_view.png" width="200" height="400" />
 
 ---
 
@@ -66,8 +63,7 @@ https://github.com/lucasmontano/openweathermap-reactnative
 
 - `$ react-native run-android`
 
-
-#### iOS - *MAC Only*
+#### iOS - _MAC Only_
 
 - `cd ios && pod install && cd ..`
 
@@ -122,7 +118,7 @@ https://github.com/lucasmontano/openweathermap-reactnative
 
 ### Step 1
 
-  - 🍴 Fork this repo!
+- 🍴 Fork this repo!
 
 ### Step 2
 
