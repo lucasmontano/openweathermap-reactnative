@@ -22,10 +22,12 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 </p>
 
-<img src="./readme/bookmark_detail.png" width="200" height="400" />
-<img src="./readme/bookmarked_location.png" width="200" height="400" />
-<img src="./readme/bookmarked_showing.png" width="200" height="400" />
-<img src="./readme/map_view.png" width="200" height="400" />
+<p align="center">
+  <img src="./readme/bookmark_detail.png" width="200" height="400" />
+  <img src="./readme/bookmarked_location.png" width="200" height="400" />
+  <img src="./readme/bookmarked_showing.png" width="200" height="400" />
+  <img src="./readme/map_view.png" width="200" height="400" />
+</p>
 
 ---
 
