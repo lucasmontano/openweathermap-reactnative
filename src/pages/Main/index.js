@@ -1,20 +1,13 @@
 import React from 'react';
 
-import {View, StyleSheet} from 'react-native';
 import ForecastDetails from '~/components/ForecastDetails';
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flex: 1,
-    backgroundColor: '#cecece',
-  },
-});
+import {Container} from './styles';
 
 const Main = () => (
-  <View style={styles.container}>
+  <Container>
     <ForecastDetails />
-  </View>
+  </Container>
 );
 
 export default Main;
