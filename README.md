@@ -34,7 +34,7 @@
   <li><a href="#-contributing">Contributing</a></li>
   <li><a href="#-support">Support</a></li>
   <li><a href="#-license">License</a></li>
-  <li><a href="#-acknowledgments">Acknowledgments</a></li>
+  <li><a href="#-other-platforms">Other Platforms</a></li>
 </ul>
 
 ---
@@ -163,7 +163,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## Acknowledgments
+## Other Platforms
 
 Open Weather on Other Platforms:
 
