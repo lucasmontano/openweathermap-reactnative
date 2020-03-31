@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/lucasmontano/openweathermap-react-native">
-    <img alt="GoStack" src="./readme/logo.png" width="350px" />
+    <img alt="Open Weather Logo" src="./readme/logo.png" width="350px" />
   </a>
 </h1>
 
@@ -39,7 +39,7 @@
   <li><a href="#-contributing">Contributing</a></li>
   <li><a href="#-support">Support</a></li>
   <li><a href="#-license">License</a></li>
-  <li><a href="#-acknowledgments">Acknowledgments</a></li>
+  <li><a href="#-other-platforms">Other Platforms</a></li>
 </ul>
 
 ---
@@ -68,8 +68,7 @@ https://github.com/lucasmontano/openweathermap-reactnative
 
 - `$ react-native run-android`
 
-
-#### iOS - *MAC Only*
+#### iOS - _MAC Only_
 
 - `cd ios && pod install && cd ..`
 
@@ -124,7 +123,7 @@ https://github.com/lucasmontano/openweathermap-reactnative
 
 ### Step 1
 
-  - 🍴 Fork this repo!
+- 🍴 Fork this repo!
 
 ### Step 2
 
@@ -169,7 +168,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## Acknowledgments
+## ⚒ Other Platforms
 
 Open Weather on Other Platforms:
 
