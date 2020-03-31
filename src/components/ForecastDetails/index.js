@@ -2,6 +2,9 @@ import React from 'react';
 import {Animated} from 'react-native';
 import {PanGestureHandler, State} from 'react-native-gesture-handler';
 
+import LottieView from 'lottie-react-native';
+import LottieAnimationJson from '~/assets/lottie-animations/sunny.json';
+
 import {
   Card,
   Header,
@@ -13,6 +16,9 @@ import {
   Observations,
   BookmarkButton,
   ButtonText,
+  WeatherInfoContainer,
+  AnimationContainer,
+  Bottom,
 } from './styles';
 
 export default function ForecastDetails({data = {}}) {
@@ -90,10 +96,17 @@ export default function ForecastDetails({data = {}}) {
               extrapolate: 'clamp',
             }),
           }}>
-          <Wind>{`M ${data.tempMax || 0}º / L ${data.tempMin || 0}º`}</Wind>
-          <Temperature>{`${data.temperature || 0}º`}</Temperature>
-          <WeatherInfo>{data.weatherInfo || ''}</WeatherInfo>
-          <Umidity>{data.humidity || 0} %</Umidity>
+          <WeatherInfoContainer>
+            <Wind>{`M ${data.tempMax || 0}º / L ${data.tempMin || 0}º`}</Wind>
+            <Temperature>{`${data.temperature || 0}º`}</Temperature>
+            <WeatherInfo>{data.weatherInfo || ''}</WeatherInfo>
+            <Umidity>{data.humidity || 0} %</Umidity>
+          </WeatherInfoContainer>
+          <AnimationContainer>
+            <LottieView source={LottieAnimationJson} autoPlay loop />
+          </AnimationContainer>
+        </Body>
+        <Bottom>
           <Observations>
             {`Right now is ${data.temperature || 0}ºC and feels like` +
               ` ${data.feelsLike || 0}ºC outside. The wind` +
@@ -103,7 +116,7 @@ export default function ForecastDetails({data = {}}) {
           <BookmarkButton>
             <ButtonText>Bookmark this location</ButtonText>
           </BookmarkButton>
-        </Body>
+        </Bottom>
       </Card>
     </PanGestureHandler>
   );
