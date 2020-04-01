@@ -1,4 +1,4 @@
-const ligth = {
+const light = {
   primary: {
     background: '#f0f0f5',
     fontColor: '#333',
@@ -9,4 +9,4 @@ const ligth = {
   },
 };
 
-export default ligth;
+export default light;
