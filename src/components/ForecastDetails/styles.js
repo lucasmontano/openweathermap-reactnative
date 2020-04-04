@@ -15,12 +15,27 @@ export const Card = styled(Animated.View)`
   position: absolute;
 `;
 
-export const Header = styled(Animated.Text)`
+export const Header = styled.View`
   font-size: 30px;
-  font-weight: bold;
   padding: 10px 10px 10px 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  background-color: #7159c1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const TitleText = styled.Text`
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #7159c1;
+  color: #fff;
+`;
+
+export const Close = styled.TouchableOpacity`
+  font-size: 30px;
+  font-weight: bold;
   background-color: #7159c1;
   color: #fff;
 `;
