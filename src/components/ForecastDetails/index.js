@@ -1,8 +1,9 @@
 import React from 'react';
 import {Animated} from 'react-native';
 import {PanGestureHandler, State} from 'react-native-gesture-handler';
-
+import Icon from 'react-native-vector-icons/Entypo';
 import LottieView from 'lottie-react-native';
+
 import LottieAnimationJson from '~/assets/lottie-animations/sunny.json';
 
 import {
@@ -19,6 +20,8 @@ import {
   WeatherInfoContainer,
   AnimationContainer,
   Bottom,
+  TitleText,
+  Close,
 } from './styles';
 
 export default function ForecastDetails() {
@@ -62,6 +65,18 @@ export default function ForecastDetails() {
     }
   }
 
+  function closeCard() {
+    Animated.timing(translateY, {
+      toValue: 500,
+      duration: 100,
+      useNativeDriver: true,
+    }).start(() => {
+      offset = 500;
+      translateY.setOffset(offset);
+      translateY.setValue(0);
+    });
+  }
+
   return (
     <PanGestureHandler
       onGestureEvent={animatedEvent}
@@ -77,16 +92,17 @@ export default function ForecastDetails() {
               }),
             },
           ],
+          opacity: translateY.interpolate({
+            inputRange: [0, 400],
+            outputRange: [1, 0.3],
+            extrapolate: 'clamp',
+          })
         }}>
-        <Header
-          style={{
-            opacity: translateY.interpolate({
-              inputRange: [0, 400],
-              outputRange: [1, 0],
-              extrapolate: 'clamp',
-            }),
-          }}>
-          Vreeland
+        <Header>
+          <TitleText>Vreeland</TitleText>
+          <Close onPress={closeCard}>
+            <Icon name="chevron-thin-down" color="white" size={25} />
+          </Close>
         </Header>
         <Body
           style={{
@@ -112,7 +128,7 @@ export default function ForecastDetails() {
             around 8.7 km/h and the pressure is 1009 hPa.
           </Observations>
           <BookmarkButton>
-            <ButtonText>Bookmark this location</ButtonText>
+            <ButtonText>Bookmark this locationn</ButtonText>
           </BookmarkButton>
         </Bottom>
       </Card>
