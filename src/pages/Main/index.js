@@ -1,6 +1,6 @@
 import React from 'react';
-
-import {View, StyleSheet} from 'react-native';
+import MapView from 'react-native-maps';
+import { View, StyleSheet } from 'react-native';
 import ForecastDetails from '~/components/ForecastDetails';
 
 const styles = StyleSheet.create({
@@ -12,9 +12,21 @@ const styles = StyleSheet.create({
 });
 
 const Main = () => (
-  <View style={styles.container}>
+  <>
+    <MapView
+      style={{ flex: 1 }}
+      initialRegion={{
+        latitude: 37.78825,
+        longitude: -122.4324,
+        latitudeDelta: 0.0922,
+        longitudeDelta: 0.0421,
+      }}
+    >
+
+    </MapView>
     <ForecastDetails />
-  </View>
+  </>
+
 );
 
 export default Main;

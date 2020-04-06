@@ -18,6 +18,7 @@
     "react-native": "0.61.5",
     "react-native-dotenv": "^0.2.0",
     "react-native-gesture-handler": "^1.6.0",
+    "react-native-maps": "0.27.1",
     "react-navigation": "^4.2.2",
     "reactotron-react-native": "^4.0.3",
     "styled-components": "^5.0.1"
