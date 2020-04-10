@@ -127,7 +127,7 @@ https://github.com/lucasmontano/openweathermap-reactnative
 
 ### Step 2
 
-- 👯 Clone this repo to your local machine using `https://github.com/luacasmontano/openweathermap-reactnative.git`
+- 👯 Clone this repo to your local machine using `https://github.com/lucasmontano/openweathermap-reactnative.git`
 
 ### Step 3
 
