@@ -2,8 +2,8 @@ import React from 'react';
 
 import '~/config/ReactotronConfig';
 
-import Routes from '~/routes';
+import AppNavigator from '~/routes';
 
-const App = () => <Routes />;
+const App = () => <AppNavigator />;
 
 export default App;
