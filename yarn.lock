@@ -5845,6 +5845,16 @@ react-native-gesture-handler@^1.6.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-location@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/react-native-location/-/react-native-location-2.5.0.tgz#b6d2f7e9c3dbe13fbe87587f9533b8bf943b6a35"
+  integrity sha512-myT54tZuFmN6d5RruMVfoa8eY+voJWkSd73xUVhjzJDnQr5uu5MFoH7hMg3trHF1CAkaY/2gIneOspUdGxv59Q==
+
+react-native-maps@0.27.1:
+  version "0.27.1"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.27.1.tgz#2f10cd417bb2fd938c9e015b1c9b6d9b1a44b97f"
+  integrity sha512-HygBkZBecTnIVRYrSiLRAvu4OmXOYso/A7c6Cy73HkOh9CgGV8Ap5eBea24tvmFGptjj5Hg8AJ94/YbmWK1Okw==
+
 react-native-safe-area-view@^0.14.8:
   version "0.14.8"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.14.8.tgz#ef33c46ff8164ae77acad48c3039ec9c34873e5b"
