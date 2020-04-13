@@ -66,6 +66,9 @@ https://github.com/lucasmontano/openweathermap-reactnative
 
 #### Android
 
+- Configure the Google Maps API Key, follow the instructions in: https://developers.google.com/maps/documentation/android-sdk/get-api-key to generate a new api key.
+- Rename the file 'android/local.properties.example' to 'android/local.properties' and change the string with your api key.
+
 - `$ react-native run-android`
 
 #### iOS - _MAC Only_
