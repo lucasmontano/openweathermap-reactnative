@@ -52,7 +52,7 @@
 
 - Setting the environment is a complex process, so it's recommended to follow the Rocketseat guide which is currently the most complete and detailed to make the settings:
 
-#### [**Rocketseat Guide**](https://docs.rocketseat.dev/ambiente-react-native/introducao)
+#### [**Rocketseat Guide**](https://react-native.rocketseat.dev/)
 
 ### Clone
 
