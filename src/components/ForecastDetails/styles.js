@@ -4,15 +4,9 @@ import styled from 'styled-components/native';
 export const Card = styled(Animated.View)`
   flex: 1;
   background: #fff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   height: 100%;
-  margin: 30px 20px;
-  width: 90%;
-  left: 0;
-  right: 0;
-  top: 0;
-  position: absolute;
+  width: 100%;
 `;
 
 export const Header = styled(Animated.Text)`
@@ -26,44 +20,53 @@ export const Header = styled(Animated.Text)`
 `;
 
 export const Body = styled(Animated.View)`
-  flex-direction: row;
+  flex-direction: column;
+  padding: 25px;
 `;
 
 export const Wind = styled.Text`
-  padding: 20px 0 0 20px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 `;
 
+export const WeatherInfoContainer = styled.View`
+  width: 100%;
+  flex-direction: row;
+  margin: 70px 0;
+`;
+
+export const DescriptionContainer = styled.View`
+  margin-right: 20px;
+`;
+
 export const Temperature = styled.Text`
-  padding: 0 0 0 20px;
-  margin-top: 70px;
   font-size: 70px;
 `;
 
 export const WeatherInfo = styled.Text`
-  padding: 0 0 0 20px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 `;
 
-export const WeatherInfoContainer = styled.View``;
-
-export const Umidity = styled.Text`
-  padding: 0 0 0 20px;
-  margin-top: 70px;
-  font-size: 20px;
+export const Humidity = styled.View`
+  margin-top: 30px;
+  font-size: 15px;
   font-weight: bold;
+  align-items: center;
+  flex-direction: row;
+`;
+
+export const AnimationContainer = styled.View`
+  flex: 1;
 `;
 
 export const Observations = styled.Text`
-  padding: 30px 20px 0 20px;
+  font-size: 18px;
 `;
 
 export const BookmarkButton = styled.TouchableOpacity`
   padding: 15px;
   background-color: #7159c1;
-  margin: 30px 20px 0 20px;
   border-radius: 10px;
   align-items: center;
 `;
@@ -73,9 +76,7 @@ export const ButtonText = styled.Text`
   font-weight: bold;
 `;
 
-export const AnimationContainer = styled.View`
-  flex: 1;
-  margin: 10px;
+export const Bottom = styled.View`
+  margin-top: auto;
+  padding: 20px;
 `;
-
-export const Bottom = styled.View``;
