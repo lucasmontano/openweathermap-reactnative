@@ -6,6 +6,8 @@ import MapView from 'react-native-maps';
 import {SafeAreaView} from 'react-navigation';
 import RNLocation from 'react-native-location';
 
+import {ForecastDetailsWrapper} from './styles';
+
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
@@ -57,7 +59,9 @@ const Main = () => {
           style={{...StyleSheet.absoluteFillObject}}
         />
       )}
-      <ForecastDetails />
+      <ForecastDetailsWrapper>
+        <ForecastDetails />
+      </ForecastDetailsWrapper>
     </SafeAreaView>
   );
 };
