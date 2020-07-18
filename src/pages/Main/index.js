@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
-import {View, StyleSheet} from 'react-native';
-import ForecastDetails from '~/components/ForecastDetails';
+import { StyleSheet } from 'react-native';
 import MapView from 'react-native-maps';
-import {SafeAreaView} from 'react-navigation';
+import { SafeAreaView } from 'react-navigation';
 import RNLocation from 'react-native-location';
+import ForecastDetails from '~/components/ForecastDetails';
 
 const styles = StyleSheet.create({
   container: {
@@ -32,9 +32,9 @@ const Main = () => {
       });
 
       if (granted) {
-        RNLocation.subscribeToLocationUpdates(locations => {
+        RNLocation.subscribeToLocationUpdates((locations) => {
           if (locations.length > 0) {
-            const {latitude, longitude} = locations[0];
+            const { latitude, longitude } = locations[0];
             setCurrentRegion({
               latitude,
               longitude,
@@ -54,7 +54,7 @@ const Main = () => {
       {currentRegion.latitude && (
         <MapView
           initialRegion={currentRegion}
-          style={{...StyleSheet.absoluteFillObject}}
+          style={{ ...StyleSheet.absoluteFillObject }}
         />
       )}
       <ForecastDetails />
