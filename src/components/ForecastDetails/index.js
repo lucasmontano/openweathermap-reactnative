@@ -1,6 +1,6 @@
 import React from 'react';
-import {Animated} from 'react-native';
-import {PanGestureHandler, State} from 'react-native-gesture-handler';
+import { Animated } from 'react-native';
+import { PanGestureHandler, State } from 'react-native-gesture-handler';
 
 import LottieView from 'lottie-react-native';
 import LottieAnimationJson from '~/assets/lottie-animations/sunny.json';
@@ -33,12 +33,12 @@ export default function ForecastDetails() {
         },
       },
     ],
-    {useNativeDriver: true},
+    { useNativeDriver: true },
   );
 
   function onHandlerStateChanged(event) {
     if (event.nativeEvent.oldState === State.ACTIVE) {
-      const {translationY} = event.nativeEvent;
+      const { translationY } = event.nativeEvent;
       let opened = false;
       offset += translationY;
 
@@ -65,7 +65,8 @@ export default function ForecastDetails() {
   return (
     <PanGestureHandler
       onGestureEvent={animatedEvent}
-      onHandlerStateChange={onHandlerStateChanged}>
+      onHandlerStateChange={onHandlerStateChanged}
+    >
       <Card
         style={{
           transform: [
@@ -77,7 +78,8 @@ export default function ForecastDetails() {
               }),
             },
           ],
-        }}>
+        }}
+      >
         <Header
           style={{
             opacity: translateY.interpolate({
@@ -85,7 +87,8 @@ export default function ForecastDetails() {
               outputRange: [1, 0],
               extrapolate: 'clamp',
             }),
-          }}>
+          }}
+        >
           Vreeland
         </Header>
         <Body
@@ -95,7 +98,8 @@ export default function ForecastDetails() {
               outputRange: [1, 0],
               extrapolate: 'clamp',
             }),
-          }}>
+          }}
+        >
           <WeatherInfoContainer>
             <Wind>M7º / L5º</Wind>
             <Temperature>5º</Temperature>
